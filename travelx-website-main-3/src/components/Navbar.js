@@ -52,12 +52,22 @@ function Navbar() {
                 Home
               </Link>
             </li>
+            {user?.displayName ?<li className='nav-item'>
+              <Link to='/SSNBox' className='nav-links' onClick={closeMobileMenu}>
+                SSN Search
+              </Link>
+            </li>: <></>}
+            {user?.displayName ?<li className='nav-item'>
+              <Link to='/AddPage' className='nav-links' onClick={closeMobileMenu}>
+                Add/ Edit
+              </Link>
+            </li>: <></>}
 
             <li>
-              {user?.displayName ? <button onClick ={handleSignOut}>Logout</button>:<Link to='/SignIn' className='nav-links-mobile' onClick={closeMobileMenu}>Sign In</Link>}
+              {user?.displayName ? <Link className='nav-links-mobile' onClick ={handleSignOut}>Logout</Link>:<Link to='/SignIn' className='nav-links-mobile' onClick={closeMobileMenu}>Sign In</Link>}
             </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline'>SIGN IN</Button>}
+          {user?.displayName ? button &&<Button buttonStyle='btn--outline' onClick ={handleSignOut}>Logout</Button>:button && <Button buttonStyle='btn--outline'>SIGN IN</Button>}
         </div>
       </nav>
     </>
