@@ -1,0 +1,93 @@
+.main{
+    text-align: center;
+    justify-content: center;
+    display: flex; 
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-color: #ffffff;
+  }
+  .main_two {
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    width: 70%;
+    padding-top: 12px;
+    border-radius: 100px; 
+    background-color: #ebebeb;
+  }
+
+  .header {
+    
+    margin-bottom: 15px;
+    color:rgb(2, 43, 105);
+  }
+  .picture {
+      padding-top: 50px;
+      justify-content: center;
+      display: flex;
+    }
+  .border {
+    background-color: rgb(2, 43, 105); 
+    border-radius: 150px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 120px;
+    width: 120px;
+  }
+  .holder_image {
+    height: 70px;
+    width: 70px;
+  } 
+
+  input{
+      width: 300px;
+      height: 50px;
+      border-radius: 60px;
+      box-shadow: inset 0px 0px 25px 0px #2670d9;
+      border: none;
+      outline: none;
+      background-color: #ffffff;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  }
+
+  .bubbles{
+      height: 25px;
+      width: 25px;
+      position: absolute;
+      padding: 14px 0 0 25px;
+  }
+
+  .image_space{
+      padding-left: 60px;
+      font-size: 20px;
+  }
+  .input_bubble_space{
+      padding-top: 15px;
+  }
+
+  .login-button > button{
+       
+      width: 380px;
+      height: 50px;
+      border-radius: 60px;
+      background-color: #02367f;
+      color: white;
+      font-size: 25px;
+      border: none;
+  }
+  .login-button{
+      padding-top: 25px;
+      padding-bottom: 15px;
+      
+  }
+
+  .alt_signin_options{
+      font-size: 20px;
+      font-weight: 400;
+  }
+   a{
+       color: #2670d9;
+       
+   }
